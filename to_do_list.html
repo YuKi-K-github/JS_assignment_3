@@ -6,25 +6,29 @@
   <title>Todoリスト</title>
 </head>
 <body>
-  <h1>Todoリスト</h1>
-  <p>
-    <input type="radio" name="status" value="1" checked="checked">全て
-    <input type="radio" name="status" value="2">作業中
-    <input type="radio" name="status" value="3">完了
-  </p>
-  
+  <h1>ToDoリスト</h1>
+
+  <div class="radiobutton">
+    <label><input type="radio" name="radio1" value="1" id="radioall" checked>すべて</label>
+    <label><input type="radio" name="radio1" value="2" id="radiowork">作業中</label>
+    <label><input type="radio" name="radio1" value="3" id="radiodone">完了</label>
+  </div>
+
   <table>
     <thead>
-      <th>ID</th>
-      <th>コメント</th>
-      <th>状態</th>
+      <tr>
+        <th>ID</th>
+        <th>コメント</th>
+        <th>状態</th>
+      </tr>
     </thead>
-    <tbody class ="add-task-target"></tbody>
+    <tbody id="todo-body"></tbody>
   </table>
-​
-  <h2>新規タスクの追加</h2>
-  <input class="add-task-value" type="text" />
-  <button class="add-task-trigger" type="button">追加</button>
-</body>
 
-<script src="./to_do_list.js"></script>
+  <h2>新規タスクの追加</h2>
+  <label for="input-todo-text">ToDoリスト</label>
+  <input id="input-todo-text" type="text">
+  <button id="add-button">追加</button>
+  
+  <script src="./to_do_list.js"></script>
+</body>
