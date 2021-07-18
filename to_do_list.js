@@ -44,10 +44,8 @@
     statusButton.textContent = '作業中';
     statusButton.addEventListener('click', () => {
       if (statusButton.textContent === '作業中') {
-        statusButton.classList.add("doing");
         statusButton.textContent = '完了';
       } else {
-        statusButton.classList.add("done");
         statusButton.textContent = '作業中';
       }
     });
