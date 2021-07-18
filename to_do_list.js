@@ -46,7 +46,7 @@
   };
 
 const createDeleteButton = (tableRecord) => {
-  var index = tableRecord.rowIndex-1;
+  let index = tableRecord.rowIndex-1;
   const deleteButton = document.createElement('button');
   deleteButton.textContent = '削除';
   deleteButton.addEventListener('click', () => {
