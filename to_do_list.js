@@ -42,6 +42,13 @@
   const createStatusButton = () => {
     const statusButton = document.createElement('button');
     statusButton.textContent = '作業中';
+    statusButton.addEventListener('click', () => {
+      if (statusButton.textContent === '作業中') {
+        statusButton.textContent = '完了';
+      } else {
+        statusButton.textContent = '作業中';
+      }
+    });
     return statusButton;
   };
 
