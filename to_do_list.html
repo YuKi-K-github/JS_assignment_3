@@ -9,9 +9,9 @@
   <h1>ToDoリスト</h1>
 
   <div class="radiobutton">
-    <label><input type="radio" name="radio1" value="1" id="radioall" checked>すべて</label>
-    <label><input type="radio" name="radio1" value="2" id="radiowork">作業中</label>
-    <label><input type="radio" name="radio1" value="3" id="radiodone">完了</label>
+    <label><input type="radio" name="radio1" onchange="radioChange()" value="1" id="radio-all" checked>すべて</label>
+    <label><input type="radio" name="radio1" onchange="radioChange()" value="2" id="radio-work">作業中</label>
+    <label><input type="radio" name="radio1" onchange="radioChange()" value="3" id="radio-done">完了</label>
   </div>
 
   <table>
@@ -29,6 +29,6 @@
   <label for="input-todo-text">ToDoリスト</label>
   <input id="input-todo-text" type="text">
   <button id="add-button">追加</button>
-  
+
   <script src="./to_do_list.js"></script>
 </body>
